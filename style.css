@@ -1,0 +1,344 @@
+/*
+Theme Name: DevDmBootstrap3
+Theme URI: http://devdm.com/DevDmBootstrap3
+Author: Danny Machal
+Author URI: http://devdm.com/
+Description: A versatile and responsive Bootstrap WordPress starter theme FOR DEVELOPERS based on Twitter Bootstrap 3.3.4.
+Version: 1.71
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl.html
+Tags: one-column, two-columns, right-sidebar, fluid-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, rtl-language-support, theme-options, translation-ready
+Text Domain: devdmbootstrap3
+
+devdmbootstrap3 WordPress Theme, Copyright 2015 Danny Machal.
+devdmbootstrap3 is distributed under the terms of the GNU GPL v3.
+*/
+
+/* The bootstrap.css file is auto-enqueued in functions.php */
+
+/* YOU SHOULD BE MAKING A CHILD THEME. Don't let me be a bad guy and erase all your hard work with a theme update. I just want to bring you new amazing features. I don't want to destroy your world. I've made a child theme available for you to use. Download it here http://devdm.com/DevDmBootstrap3/child-themes/ */
+
+/****************** Special Blank CSS classes for child themes to use without disturbing core bootstrap styles ****************/
+
+.dmbs-container {
+
+}
+
+.dmbs-header {
+
+}
+
+.dmbs-header-img {
+
+}
+
+.dmbs-header-text {
+
+}
+
+.dmbs-top-menu {
+
+}
+
+.dmbs-content {
+
+}
+
+.dmbs-main {
+
+}
+
+.dmbs-left {
+
+}
+
+.dmbs-right {
+
+}
+
+.dmbs-footer-menu {
+
+}
+
+.dmbs-author-credits {
+
+}
+
+.dmbs-footer {
+
+}
+
+body{
+	color: #4A4A4A;
+	font-family: 'robotolight';
+	padding-bottom: 0px;
+	font-size: 12px;
+}
+
+a{
+	color: #4A4A4A;
+}
+
+a:hover{
+	color: #8BC53F;
+	text-decoration: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.navbar-nav>li>a:hover, .navbar-nav>li>a:visited {
+	background: none;
+	color: inherit;
+}
+
+h1, .h1, h2, .h2, h3, .h3{
+	font-family: 'oswaldlight';
+}
+
+h2{
+	font-size: 28px;
+	text-transform: uppercase;
+}
+
+h3{
+	font-size: 18px;
+}
+
+.footer {
+	background: #4A4A4A;
+	text-align: center;
+	color: #9B9B9B;
+	font-size: 10px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.footer a{
+	color: #9B9B9B;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.footer .nav {
+	font-family: 'oswaldlight';
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+	background-color: #4a4a4a;
+	color: #8BC53F;
+}
+
+.icon{
+	padding: 40px;
+	font-family: 'oswaldlight';
+}
+
+.carousel-title{
+	font-size: 28px;
+	position: absolute;
+	right: 15%;
+	top: 1%;
+	left: 15%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+	text-align: center;
+	font-family: oswaldlight;
+	color: #D8D8D8;
+}
+
+.carousel-blurb{
+	font-size: 12px;
+	font-family: 'robotolight';
+	position: absolute;
+	right: 15%;
+	bottom: 25%;
+	left: 15%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+	text-align: center;
+}
+
+.carousel-blurb>a{
+	color: #fff;
+}
+
+.carousel-caption{
+	font-size: 144px;
+	top: 33%;
+	left: 5%;
+    right: 5%;
+    font-family: 'oswaldlight';
+    text-shadow: none;
+}
+
+.carousel-caption h4{
+  display: none;
+}
+
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{
+	width: 100%;
+}
+
+.logo{
+	padding: 0 30px;
+  	position: relative;
+  	top: -9px;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 6px 15px;
+ }
+
+.navbar{
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+  font-family: 'oswaldlight';
+  font-size: 12px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: transparent;
+    color: #8BC53F;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-color: nonex;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-fixed-top{
+	background: #FFF;
+}
+
+
+.navbar-toggle .icon-bar {
+    background-color: #000 !important;
+}
+
+.searchform{
+	text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 0;
+  border-bottom: 0;
+}
+
+#map-canvas {
+        width: 233px;
+        height: 140px;
+}
+
+/* Forms */
+.input-group .form-control, .input-group #searchform #s {
+  position: relative;
+  font-family: 'oswaldlight';
+  font-size: 12px;
+  z-index: 2;
+  float: left;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 0;
+ }
+
+.form-control, #searchform #s {
+	border: 0;
+	border-radius: 0 !important;
+}
+
+/* Google Maps */
+#map-canvas, #map-canvas-net {
+    height: 140px;
+    width: 232px;
+    margin: 0px;
+    padding: 0px
+}
+
+/* Font Face */
+
+@font-face {
+    font-family: 'oswaldlight';
+    src: url('fonts/oswald-light-webfont.eot');
+    src: url('fonts/oswald-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/oswald-light-webfont.woff2') format('woff2'),
+         url('fonts/oswald-light-webfont.woff') format('woff'),
+         url('fonts/oswald-light-webfont.ttf') format('truetype'),
+         url('oswald-light-webfont.svg#oswaldlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/roboto-light-webfont.eot');
+    src: url('fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('fonts/roboto-light-webfont.woff') format('woff'),
+         url('fonts/roboto-light-webfont.ttf') format('truetype'),
+         url('fonts/roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+    	.col-lg-3 {
+  			width: 25%;
+		}
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+    	.carousel-caption {
+        font-size: 85px;}
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        .carousel-caption {
+        font-size: 80px;}
+        
+        .hidden{
+            display: block !important;
+        }
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        .carousel-caption {
+        font-size: 50px;}
+        
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+    	.carousel-caption {
+        font-size: 40px;}
+    }
