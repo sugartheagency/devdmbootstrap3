@@ -29,7 +29,7 @@
     <?php echo do_shortcode('[image-carousel category="main-carousel"]'); ?>
 
     <div id="what-we-do">
-      <div class="container" style="margin-top: 20px;max-width:571px;">
+      <div class="container" style="margin-top: 20px;max-width:700px;">
         <!--<div class="starter-template">-->
           <h2 class="text-center">What We Do</h2>
           <p class="text-center" style="font-size: 12px;">
@@ -74,7 +74,7 @@
         <!--<div class="row">-->
           <div class="col-md-12" style="background: #D8D8D8;text-align: center;padding: 10px;">
             <h2>Our Clients</h2>
-            <div class="container" style="max-width: 650px;">
+            <div class="container" style="max-width: 700px;">
               <div class="col-xs-6 col-sm-3">
                 <img src="<?php echo THEME_IMG_PATH; ?>/bidvest-logo.svg" alt="Bidvest Insurance Logo" onerror="this.onerror=null; this.src='<?php echo THEME_IMG_PATH; ?>/bidvest-logo.png'">
               </div>
@@ -125,7 +125,7 @@
       </div> <!-- blog -->
 
       <div id="contact" style="margin-bottom: 40px;">
-        <div class="container" style="max-width: 571px;">
+        <div class="container" style="max-width: 700px;">
          <div class="row">
            <div class="col-md-12" style="text-align: center;margin-bottom: 20px;">
              <h2>Contact Us</h2>
@@ -134,7 +134,7 @@
              <div class="col-sm-4">
              <!--Gregg Fry-->
              <h5 style="font-weight: bold;text-transform:uppercase;font-family: 'oswaldlight';">Gregg Fry</h5>
-             <p style="font-size: 12px;margin-bottom: 0;">+27 796977344</p>
+             <p style="font-size: 12px;margin-bottom: 0;">+27 79 697 7344</p>
              <p style="font-size: 12px;"><a href="mailto:Gregg@sugartheagency.co.za">gregg@sugartheagency.co.za</a></p>
              </div>
              
@@ -148,7 +148,7 @@
              <div class="col-sm-4">
              <!-- Butch -->
              <h5 style="font-weight: bold;text-transform:uppercase;font-family: 'oswaldlight';">Butch James</h5>
-             <p style="font-size: 12px;margin-bottom: 0;">+27 796977344</p>
+             <p style="font-size: 12px;margin-bottom: 0;">+27 82 465 1001</p>
              <p style="font-size: 12px;"><a href="mailto:butch@sugartheagency.co.za">butch@sugartheagency.co.za</a></p>
              </div>
          </div>
