@@ -75,6 +75,10 @@ body{
 	font-size: 12px;
 }
 
+.blog-header{
+  min-height: 40px;
+}
+
 a{
 	color: #4A4A4A;
 }

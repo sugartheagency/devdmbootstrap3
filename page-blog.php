@@ -36,62 +36,47 @@
 	<div class="container">
 		<div class="row">
 		  <div class="col-md-12">
-			<div class="page-header">
-				<!--<h1><?php the_title(); ?></h1>-->
+			<div class="page-header" style="border-bottom: 1px solid #979797;">
+				<div class="searchform"><?php get_search_form(); ?></div>
 			</div>
-
-			<div class="searchform"><?php get_search_form(); ?></div>
-
-			<article>
 
 				<?php // Display blog posts on any page @ http://m0n.co/l
 					$temp = $wp_query; $wp_query= null;
-					$wp_query = new WP_Query(); $wp_query->query('showposts=5' . '&paged='.$paged);
+					$wp_query = new WP_Query(); $wp_query->query('showposts=7' . '&paged='.$paged);
 					while ($wp_query->have_posts()) : $wp_query->the_post();
 					
 					if( $wp_query->current_post == 0 && !is_paged() ){
 				
 				?>
-				
-					<div class="row snippet first">
-						<div class="col-md-4 thumb">
-							<?php the_post_thumbnail( 'medium' ); ?>
-						</div>
-		
-						<div class="col-md-8">
-							
-							<div class="post-title">
-								<h2><?php echo get_the_date(); ?> - <span><?php the_title(); ?></span></h2>
-							</div>
-							
-							<?php the_excerpt(); ?>
-							<a href="<?php the_permalink(); ?>" title="Read more">Read more >></a>
-						</div>
-					</div>
+					<!-- Featured article -->
+					<div class="container" style="max-width: 760px;">
+					 <article>
+					  <div class="col-md-12" style="margin-bottom: 20px;">
+					    <?php the_post_thumbnail( 'large' ); ?>
+					    <div class="post-title">
+						  <h2><?php echo get_the_date(); ?> - <span><?php the_title(); ?></span></h2>
+					  	</div>
+					  	<?php the_excerpt(); ?>
+					  	<a href="<?php the_permalink(); ?>" title="Read more">Read more >></a>
+					  </div>
+					 </article>
 					
-					<hr class="hr">
 				
 				<?php } else { ?>
-					
-					<div class="row snippet">
-						<div class="col-md-4">
+					<!-- Medium posts -->
+					  <article>
+						<div class="col-sm-6" style="margin-bottom: 20px;">
 							<?php the_post_thumbnail( 'medium' ); ?>
-						</div>
-		
-						<div class="col-md-8">
-							<div class="post-title">
-								<h3><?php echo get_the_date(); ?> - <span><?php the_title(); ?></span></h3>
-							</div>
-							
+							<h3 class="blog-header"><?php echo get_the_date(); ?> - <span><?php the_title(); ?></span></h3>
 							<?php the_excerpt(); ?>
 							<a href="<?php the_permalink(); ?>" title="Read more">Read more >></a>
 						</div>
-					</div>
-					
-					<hr class="hr">
+					  </article>
+
+					  <!--<div class="clearfix visible-md visible-lg"></div>-->
 			
 				<?php } endwhile; ?>
-		
+				</div> <!-- container 760px -->
 				<?php if ($paged > 1) { ?>
 		
 				<nav id="nav-posts">
@@ -109,7 +94,6 @@
 		
 				<?php wp_reset_postdata(); ?>
 		
-			</article>
 			
 		</div>
 

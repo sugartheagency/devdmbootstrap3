@@ -188,4 +188,19 @@ function baw_theme_setup() {
 	return str_replace( '#asyncload', '', $url )."' async='async"; 
     }
 add_filter( 'clean_url', 'ikreativ_async_scripts', 11, 1 );
+
+// Remove query string from static files
+function remove_cssjs_ver( $src ) {
+ if( strpos( $src, '?ver=' ) )
+ $src = remove_query_arg( 'ver', $src );
+ return $src;
+}
+add_filter( 'style_loader_src', 'remove_cssjs_ver', 10, 2 );
+add_filter( 'script_loader_src', 'remove_cssjs_ver', 10, 2 );
+
+// Excerpts are now 20 characters long
+//function custom_excerpt_length( $length ) {
+//	return 20;
+//}
+//add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 ?>
